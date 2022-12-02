@@ -101,7 +101,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &pas &kp PG_UP &trans
 				&trans &trans &trans              &trans                    &trans  &rctrl_rshft_l &kp HOME &kp DOWN &kp END
 			>;
-			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_LEFT C_AC_SCROLL_RIGHT>;
+			sensor-bindings = <&inc_dec_kp &C_AC_SCROLL_LEFT &C_AC_SCROLL_RIGHT>;
 		};
 	};
 };
