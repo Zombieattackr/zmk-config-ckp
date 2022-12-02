@@ -40,6 +40,26 @@
 		, <&macro_tap &kp O &kp R &kp D>
                 ;
         };
+	C_AC_SCROLL_LEFT: C_AC_SCROLL_LEFT {
+            label = "ZM_C_AC_SCROLL_LEFT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RSHFT>
+                , <&macro_tap &kp C_AC_SCROLL_DOWN>
+                , <&macro_release &kp RSHFT>
+                ;
+        };
+	C_AC_SCROLL_RIGHT: C_AC_SCROLL_RIGHT {
+            label = "ZM_C_AC_SCROLL_RIGHT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RSHFT>
+                , <&macro_tap &kp C_AC_SCROLL_UP>
+                , <&macro_release &kp RSHFT>
+                ;
+        };
     };
 };
 / {
@@ -81,7 +101,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &pas &kp PG_UP &trans
 				&trans &trans &trans              &trans                    &trans  &rctrl_rshft_l &kp HOME &kp DOWN &kp END
 			>;
-			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_LEFT C_AC_SCROLL_RIGHT>;
 		};
 	};
 };
