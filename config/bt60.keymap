@@ -56,7 +56,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PG_UP &trans
-				&trans &trans &trans              &trans                            &trans  &ctrl_rshft_l &kp HOME &kp DOWN &kp END
+				&trans &trans &trans              &trans                    &trans  &ctrl_rshft_l &kp HOME &kp DOWN &kp END
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; //LSHFT + C_AC_SCROLL_UP C_AC_SCROLL_DOWN
 		};
