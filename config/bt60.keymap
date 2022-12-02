@@ -5,6 +5,21 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    macros {
+        ctrl_rshft_l: ctrl_rshft_l {
+            label = "ZM_ctrl_rshft_l";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RCTRL &kp RSHFT>
+                , <&macro_tap &kp L>
+                , <&macro_release &kp RCTRL &kp RSHFT>
+                ;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -31,7 +46,7 @@
 				&bootloader &kp C_BRI_UP &rgb_ug RGB_SAI &rgb_ug RGB_SPI &rgb_ug EFF &rgb_ug RGB_BRI &rgb_ug RGB_HUI &trans &trans &trans &trans &kp SLCK &kp INS &kp PAUSE_BREAK
 				&trans      &kp C_BRI_DN &rgb_ug RGB_SAD &rgb_ug RGB_SPD &rgb_ug EFR &rgb_ug RGB_BRD &rgb_ug RGB_HUD &trans &trans &rgb_ug RGB_TOG &trans &kp C_AL_CALC   &reset
 				&trans      &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PP &kp PP  &kp C_VOL_UP &l[ C_MUTE
-				&bt BT_CLR &bt BT_PRV  &bt BT_NXT              &trans                            &none  &trans &kp C_PREV   &kp C_VOL_DN &kp C_NEXT
+				&bt BT_CLR &bt BT_PRV  &bt BT_NXT              &trans                            &ctrl_rshft_l  &trans &kp C_PREV   &kp C_VOL_DN &kp C_NEXT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
@@ -41,7 +56,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PG_UP &trans
-				&trans &trans &trans              &trans                            &trans  &none &kp HOME &kp DOWN &kp END
+				&trans &trans &trans              &trans                            &trans  &ctrl_rshft_l &kp HOME &kp DOWN &kp END
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
