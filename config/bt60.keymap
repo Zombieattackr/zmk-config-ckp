@@ -32,7 +32,7 @@
 				// |  CTL  |  WIN  |  ALT  |            SPACE                  | ALT | CTRL| LEFT| DOWN|RIGHT|
 				// ------------------------------------------------------------------------------------------
 			bindings = <
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9 &kp  N0  &kp MINUS &kp EQUAL &kp BSPC &kp K_SCROLL_UP
+				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9 &kp  N0  &kp MINUS &kp EQUAL &kp BSPC &kp C_AC_SCROLL_UP
 				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  &kp BSLH
 				&kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           &kp RET
 				&kp LSHFT &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT FSLH &kp UP &kp DEL
@@ -48,7 +48,7 @@
 				&trans      &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PP &kp PP  &kp C_VOL_UP &l[ C_MUTE
 				&bt BT_CLR &bt BT_PRV  &bt BT_NXT              &trans                            &ctrl_rshft_l  &trans &kp C_PREV   &kp C_VOL_DN &kp C_NEXT
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 		nav_layer {
 			bindings = <
@@ -58,7 +58,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp PG_UP &trans
 				&trans &trans &trans              &trans                            &trans  &ctrl_rshft_l &kp HOME &kp DOWN &kp END
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; //LSHFT + C_AC_SCROLL_UP C_AC_SCROLL_DOWN
 		};
 	};
 };
