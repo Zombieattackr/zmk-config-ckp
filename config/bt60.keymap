@@ -84,7 +84,7 @@
 				&trans &none     &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C_PP &none &kp C_VOL_UP &kp C_MUTE
 				&trans &trans &trans              &trans                            &rctrl_rshft_l  &trans &kp C_PREV &kp C_VOL_DN &kp C_NEXT
 			>;
-			sensor-bindings = <&inc_dec_kp C_BRI_UP C_AC_BRI_DN>;
+			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
 		};
 		raise2 {
 				// ------------------------------------------------------------------------------------------
@@ -97,7 +97,7 @@
 			bindings = <
 				&bootloader &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &reset
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &sys_reset
 				&trans &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &pas &none &kp PG_UP &trans
 				&bt BT_CLR &bt BT_PRV  &bt BT_NXT              &trans                    &trans  &rctrl_rshft_l &kp HOME &kp PG_DN &kp END
 			>;
