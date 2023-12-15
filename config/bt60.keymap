@@ -46,32 +46,6 @@
 		, <&macro_tap &kp O &kp R &kp D>
                 ;
         };
-	/*
-	C_AC_SCROLL_LEFT: C_AC_SCROLL_LEFT {
-            label = "ZM_C_AC_SCROLL_LEFT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-	    wait-ms = <40>;
-	    tap-ms = <40>;
-            bindings
-                = <&macro_press &kp RSHFT>
-                , <&macro_tap &kp C_AC_SCROLL_DOWN>
-                , <&macro_release &kp RSHFT>
-                ;
-        };
-	C_AC_SCROLL_RIGHT: C_AC_SCROLL_RIGHT {
-            label = "ZM_C_AC_SCROLL_RIGHT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-	    wait-ms = <40>;
-	    tap-ms = <40>;
-            bindings
-                = <&macro_press &kp RSHFT>
-                , <&macro_tap &kp C_AC_SCROLL_UP>
-                , <&macro_release &kp RSHFT>
-                ;
-        };
-	*/
     };
 };
 / {
